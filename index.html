@@ -37,6 +37,8 @@
           extend: {
             colors: {
               'primary-color': '#B68C5A',
+              'gradient-start': '#111',
+              'gradient-end': '#111111',
             },
           },
         },
@@ -47,16 +49,18 @@
       .font-eb {
         font-family: 'EB Garamond', serif;
       }
-      .font-poppins {
+      /* .font-poppins {
         font-family: 'Poppins', sans-serif;
-      }
+      } */
     </style>
   </head>
-  <body class="font-eb font-poppins">
-    <header class="container mx-auto">
+  <body class="font-eb">
+    <header>
       <!-- navbar starts here  -->
-      <section class="my-10">
-        <div class="navbar bg-base-100">
+      <section
+        class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 pt-5 pb-0 mt-5 mb-0"
+      >
+        <div class="navbar bg-base-100 px-0">
           <div class="navbar-start">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -88,7 +92,7 @@
                 <li><a>Contact Us</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost normal-case text-xl">
+            <a class="btn btn-ghost normal-case text-xl pl-0">
               <img
                 class="w-20 md:w-28 lg:w-40"
                 src="./images/logo2.png"
@@ -153,9 +157,51 @@
     </header>
     <main>
       <!-- banner container starts -->
+      <section class="max-w-screen-xl mx-auto px-4 md:px-16 lg:px-24 py-5 my-5">
+        <div
+          class="hero min-h-[550px] bg-center bg-cover bg-no-repeat"
+          style="background-image: url('./images/banner.png')"
+        >
+          <div class="hero-overlay bg-black bg-opacity-40"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="">
+              <h1
+                class="mb-5 min-text-[25px] md:text-[50px] lg:text-[72px] font-extrabold text-white w-auto"
+              >
+                We Provide Effective <br />
+                Legal Solutions
+              </h1>
+              <p class="mb-5">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority <br />
+                have suffered alteration in some form, by injected humour
+              </p>
+              <!-- search bar starts  -->
+              <div class="flex items-center justify-center gap-4">
+                <div>
+                  <div>
+                    <input
+                      class="input rounded-lg w-[160px] md:w-[300px] lg:w-[500px]"
+                      placeholder="Search your services"
+                    />
+                  </div>
+                </div>
+
+                <div class="indicator">
+                  <button
+                    class="btn w-[70px] md:w-[150px] lg:w-[150px] text-white bg-primary-color border-transparent"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+              <!-- search bar ends  -->
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- banner container ends -->
-      <section></section>
     </main>
     <footer></footer>
   </body>
